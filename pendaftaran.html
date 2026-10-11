@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum - Pendaftaran</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Beranda</a> |
+        <a href="pendaftaran.html">Pendaftaran</a>
+    </nav>
+
+    <hr>
+
+    <h2>Form Pendaftaran Praktikan</h2>
+
+    <form method="post" action="">
+        <table>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td>: <input type="text" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td>: <input type="password" id="pass" name="pass"></td>
+            </tr>
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td>: <input type="number" id="nim" name="nim"></td>
+            </tr>
+            <tr>
+                <td><label for="tgl">Tanggal Lahir</label></td>
+                <td>: <input type="date" id="tgl" name="tgl"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:
+                    <input type="radio" id="laki" name="jk" value="L">
+                    <label for="laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jk" value="P">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Minat bidang</td>
+                <td>:
+                    <input type="checkbox" id="web" name="minat" value="web">
+                    <label for="web">Web</label>
+                    <input type="checkbox" id="network" name="minat" value="network">
+                    <label for="network">Jaringan</label>
+                    <input type="checkbox" id="design" name="minat" value="design">
+                    <label for="design">Design/Modeling</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="prodi">Program Studi</label></td>
+                <td>:
+                    <select id="prodi" name="prodi">
+                        <option value="IF">S1 Teknik Informatika</option>
+                        <option value="SI">S1 Sistem Informasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alasan">Alasan Mendaftar</label></td>
+                <td>:
+                    <textarea id="alasan" name="alasan" rows="3" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
